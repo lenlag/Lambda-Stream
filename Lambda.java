@@ -4,7 +4,10 @@ public class Lambda implements IParler {
 
 	@Override
 	public void parler(String s) {
-	//	System.out.println(s);		
+		IParler.super.parler(s);
 	}
+
+			
+	
 
 }

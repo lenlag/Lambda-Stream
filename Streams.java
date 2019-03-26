@@ -28,10 +28,9 @@ public class Streams {
 		Stream<Integer> stream = list.stream(); // on crée le stream associé à la liste
 
 		stream.forEach(s -> System.out.print(s)); // parcourir une liste avec un stream
-
-		stream = list.stream();// rouvrir le Stream avant de re-faire une opération dessus
-
 		System.out.println();
+		
+		stream = list.stream();// rouvrir le Stream avant de re-faire une opération dessus	
 		stream.forEach(System.out::print); // avec operateur ::
 
 		///////////////////////////////////// FILTRAGE////////////////////////////////////////////

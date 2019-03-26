@@ -1,8 +1,10 @@
 package FromScratch;
 
-@FunctionalInterface
+
 public interface IParler {
-	public void parler(String s);
+	public default void parler(String s) {
+		System.out.println(s);
+	};
 	
 	
 
